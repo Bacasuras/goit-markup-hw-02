@@ -7,9 +7,10 @@ body {
 /* header-styles */
 .header {
   background-color: #ffffff;
-  width: 1440px;
+  max-width: 1440px;
   padding: 24px 126px;
   display: flex;
+  justify-content: space-between;
 }
 .header-items {
   display: flex;
@@ -18,29 +19,42 @@ body {
   padding: 0 0 0 0;
 }
 .header-logo {
-  color:  #2E2F42
- font-family: Raleway;
-font-size: 18px;
-font-style: normal;
-font-weight: 800;
-line-height: 21px;
-letter-spacing: 0.54px;
-text-transform: uppercase;
-text-decoration: none;
-margin: 0 76px 0 0;
+  color: #2e2f42;
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0 76px 0 0;
 }
-.header-nav{
+.header-item:hover {
+  color: #404bbf;
+  position: relative;
+}
+.header-item:hover::after {
+  content: '';
+  height: 4px;
+  width: 100%;
+  background-color: #404bbf;
+  position: absolute;
+  left: 0;
+  top: 20px;
+}
+.header-nav {
   display: flex;
 }
-.header-item{
+.header-item {
   margin-right: 40px;
   text-decoration: none;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: 24px;
-letter-spacing: 0.32px;
-color: #2E2F42;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  color: #2e2f42;
 }
 .logo-color {
   color: #4d5ae5;
@@ -52,22 +66,36 @@ color: #2E2F42;
   letter-spacing: 0.54px;
   text-transform: uppercase;
 }
-.contacts{
-  margin: 0 0 0 332px;
+.contacts-number:hover {
+  color: #404bbf;
 }
-.contacts-items{
-list-style: none;
-display: flex;
-margin: 0 0 0 0;
+.contacts-item:hover {
+  color: #404bbf;
 }
-.contacts-item{
+.contacts-items {
+  list-style: none;
+  display: flex;
+  margin: 0 0 0 0;
+}
+.contacts-number {
+  margin-right: 0;
   color: var(--slate, #434455);
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; /* 150% */
-letter-spacing: 0.32px;
-margin: 0 40px 0 ;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.32px;
+  text-decoration: none;
+}
+.contacts-item {
+  color: var(--slate, #434455);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.32px;
+  margin: 0 40px 0;
+  text-decoration: none;
 }
 /* hero-styles */
 .hero {
@@ -104,4 +132,7 @@ margin: 0 40px 0 ;
   gap: 10px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.hero-order:hover {
+  background-color: #404bbf;
 }
