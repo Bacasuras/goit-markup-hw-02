@@ -21,7 +21,7 @@ body {
 /* header */
 .header {
 }
-.header-logo {
+.logo {
   color: var(--iris, #4d5ae5);
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
@@ -38,7 +38,9 @@ body {
 .header-nav {
   font-family: 'Roboto', sans-serif;
 }
-
+.header-items {
+  font-style: normal;
+}
 .nav-list {
 }
 .header-item {
@@ -148,44 +150,31 @@ body {
   background-color: #ffffff;
 }
 /* section-4 */
-.section-four {
-  background-color: #f4f4fd;
-}
-.list-four {
+.items-four {
   background-color: #ffffff;
-  list-style: none;
 }
 /* footer */
-.footer-logo {
-  color: var(--iris, #4d5ae5);
-  font-family: 'Raleway', sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 21px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
+
 .section-footer {
   background-color: var(--navyblue);
 }
 .footer-color {
-  color: var(--cloud, #f4f4fd);
+  color: #f4f4fd;
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
-  line-height: 21px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 .footer-text {
-  color: var(--cloud, #f4f4fd);
+  color: #f4f4fd;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
 }
 /* portfolio */
@@ -208,13 +197,13 @@ body {
   color: #ffffff;
 }
 .portfolio-title {
-  color: var(--navyblue, #2e2f42);
+  color: var(--navyblue);
   /* Header 3 */
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px; /* 120% */
+  line-height: 1.2;
   letter-spacing: 0.02em;
 }
 .portfolio-text {
@@ -224,7 +213,7 @@ body {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 1.5;
   letter-spacing: 0.02em;
 }
 /* portfolio-footer */
@@ -235,6 +224,6 @@ body {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 1.5;
   letter-spacing: 0.02em;
 }
