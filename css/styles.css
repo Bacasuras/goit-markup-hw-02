@@ -197,7 +197,6 @@ body {
   background-color: var(--cloud);
   color: #4d5ae5;
   text-align: center;
-  /* Button Text */
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -234,7 +233,6 @@ body {
 /* portfolio-footer */
 .portfolio-footer-text {
   color: var(--cloud, #f4f4fd);
-  /* Body */
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-style: normal;
